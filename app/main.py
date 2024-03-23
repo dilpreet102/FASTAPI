@@ -5,10 +5,10 @@ from fastapi.params import Body
 from pydantic import BaseModel
 import mysql.connector
 from mysql.connector import Error
-from . import models, schemas, utils
-from .database import engine, get_db
+from app import models, schemas, utils
+from app.database import engine, get_db
 from sqlalchemy.orm import Session
-from .routers import post, user, auth
+from app.routers import post, user, auth
 
 models.Base.metadata.create_all(bind=engine)
 
