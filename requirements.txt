@@ -12,3 +12,4 @@ python-jose[cryptography]
 jose[pycryptodome]
 python-multipart
 pydantic_settings
+alembic
